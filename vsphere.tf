@@ -23,24 +23,24 @@
                       name                  = "vsphere"
                       vsphere_cloud_provider {
                           global {
-                              datacenters          = ""
+                              datacenters          = "evodc01"
                               insecure_flag        = true
                               password             = ""
                               user                 = ""
                           }
 
                           virtual_center {
-                              datacenters          = ""
-                              name                 = ""
+                              datacenters          = "evodc01"
+                              name                 = "10.9.100.50"
                               password             = ""
                               user                 = ""
                           }
 
                           workspace {
-                              datacenter        = ""
-                              default_datastore = ""
+                              datacenter        = "evodc01"
+                              default_datastore = "evonas01"
                               folder            = "vm/"
-                              server            = ""
+                              server            = "10.9.100.50"
                           }
                         }
                     }
